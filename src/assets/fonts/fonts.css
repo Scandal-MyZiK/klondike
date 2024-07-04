@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Titan One";
+  src: local("Titan One Regular"), local("Titan-One-Regular"),
+    url("./Titan/TitanOne-Regular.woff2") format("woff2"),
+    url("./Titan/TitanOne-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("./Montserrat/Montserrat-Regular.woff2") format("woff2"),
+    url("./Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("./Montserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("./Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: 700;
+}
