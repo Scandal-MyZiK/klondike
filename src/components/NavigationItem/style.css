@@ -1,0 +1,13 @@
+.bottom-nav__link {
+  max-width: 89px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./assets/bg-yellow.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 19px 5px;
+  text-align: center;
+}
