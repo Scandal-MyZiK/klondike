@@ -1,12 +1,7 @@
 import React, { Suspense, lazy } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "normalize.css";
-import Loading from "./components/Loading";
+import Loading from "./components/Loading/Loading";
 import Navigation from "./components/Navigation/Navigation";
 import "./app.css";
 
@@ -21,7 +16,7 @@ const App = () => {
       <div className="app-container">
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/tasks" element={<About />} />
             <Route path="/team" element={<Contact />} />
             <Route path="/roadmap" element={<Profile />} />

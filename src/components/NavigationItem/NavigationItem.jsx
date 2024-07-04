@@ -5,12 +5,12 @@ import "./style.css";
 function NavigationItem({ path, text, icon }) {
   return (
     <NavLink
-      className="bottom-nav__link"
-      exact
+      className={({ isActive }) =>
+        isActive ? "bottom-nav__link active" : "bottom-nav__link"
+      }
       to={path}
-      activeClassName="active"
     >
-      <img className="bottom-nav__img" src={icon} />
+      <img className="bottom-nav__img" src={icon} alt="" />
       <span className="bottom-nav__text">{text}</span>
     </NavLink>
   );
