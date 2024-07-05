@@ -6,9 +6,9 @@ import Navigation from "./components/Navigation/Navigation";
 import "./app.css";
 
 const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Contact = lazy(() => import("./pages/Contact"));
-const Profile = lazy(() => import("./pages/Profile"));
+const Team = lazy(() => import("./pages/Tasks"));
+const Tasks = lazy(() => import("./pages/Team"));
+const RoadMap = lazy(() => import("./pages/RoadMap"));
 
 const App = () => {
   return (
@@ -17,9 +17,9 @@ const App = () => {
         <Suspense fallback={<Loading />}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tasks" element={<About />} />
-            <Route path="/team" element={<Contact />} />
-            <Route path="/roadmap" element={<Profile />} />
+            <Route path="/team" element={<Tasks />} />
+            <Route path="/tasks" element={<Team />} />
+            <Route path="/roadmap" element={<RoadMap />} />
           </Routes>
         </Suspense>
         <Navigation />
