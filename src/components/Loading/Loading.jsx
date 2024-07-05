@@ -1,16 +1,16 @@
 import React from "react";
 import "./style.css";
-import AppWidth from "../AppWidthContainer/AppWidthContainer";
+import AppWidthWithContainer from "../AppWidthContainer/AppWidthWithContainer";
 
 import LoadingImg from "./assets/loading-img.png";
 
 const Loading = () => {
   return (
-    <AppWidth className="loading-bg">
+    <AppWidthWithContainer className="loading-bg">
       <div className="loading-content">
         <img className="loading-img" src={LoadingImg} alt="" />
       </div>
-    </AppWidth>
+    </AppWidthWithContainer>
   );
 };
 

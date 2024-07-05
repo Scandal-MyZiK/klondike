@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Container from "../Container/Container";
 
-const AppWidthContainer = ({ children, className = "" }) => {
+const AppWidthWithContainer = ({ children, className = "" }) => {
   return (
     <div className={`app-width ${className}`}>
       <Container>{children}</Container>
@@ -10,4 +10,4 @@ const AppWidthContainer = ({ children, className = "" }) => {
   );
 };
 
-export default AppWidthContainer;
+export default AppWidthWithContainer;
