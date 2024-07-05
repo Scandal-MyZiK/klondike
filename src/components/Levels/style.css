@@ -1,0 +1,44 @@
+.levels {
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.levels__block {
+  padding: 23px 18px;
+  background-image: url(./levels/levels-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.levels__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.levels__img {
+  max-width: 14px;
+}
+
+.levels__numbers {
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.levels__desc {
+  font-family: "Montserrat";
+  text-align: center;
+
+  margin-top: 12px;
+}
+
+.levels__text {
+  font-family: "Montserrat";
+  text-align: center;
+}

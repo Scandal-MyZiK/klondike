@@ -1,0 +1,24 @@
+.copylink {
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  border-radius: 13px;
+  border: 3px solid rgba(152, 152, 152, 1);
+  padding: 9px 16px;
+}
+
+.copylink__text {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(152, 152, 152, 1);
+}
+
+.copylink__btn {
+  cursor: pointer;
+}
+
+.copylink__img {
+  max-width: 24px;
+}

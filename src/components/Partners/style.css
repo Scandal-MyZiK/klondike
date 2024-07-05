@@ -1,0 +1,34 @@
+.partners {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: linear-gradient(
+    181deg,
+    rgba(254, 208, 131, 1),
+    rgba(255, 174, 39, 1)
+  );
+  border-radius: 13px;
+  border: 3px solid rgba(88, 43, 2, 1);
+}
+
+.partners__img {
+  max-width: 52px;
+}
+
+.partners__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.partners__text {
+}
+
+.partners__number {
+  font-size: 36px;
+}
