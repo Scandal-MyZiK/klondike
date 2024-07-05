@@ -10,10 +10,8 @@ import map from "./assets/map.svg";
 import Container from "../Container/Container";
 
 function Navigation() {
-  // Получаем текущий URL-путь
   const location = useLocation();
 
-  // Определяем, находится ли пользователь на главной странице
   const isHome = location.pathname === "/";
 
   return (

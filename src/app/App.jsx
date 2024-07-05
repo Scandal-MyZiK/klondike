@@ -9,7 +9,7 @@ import "./app.css";
 const Home = lazy(() => import("../pages/Home/Home"));
 const Team = lazy(() => import("../pages/Tasks/Tasks"));
 const Tasks = lazy(() => import("../pages/Team/Team"));
-const RoadMap = lazy(() => import("../pages/RoadMap"));
+const RoadMap = lazy(() => import("../pages/Roadmap/RoadMap"));
 
 const App = () => {
   return (

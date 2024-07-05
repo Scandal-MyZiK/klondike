@@ -1,34 +1,13 @@
 import React from "react";
-import LevelsImg from "./levels/Levels-img.svg";
 import "./style.css";
+import { LevelItem } from "../LevelItem/LevelItem";
 
-export const Levels = ({ numbers, text, desc }) => {
+export const Levels = () => {
   return (
     <div className="levels">
-      <div className="levels__block">
-        <div className="levels__info">
-          <img className="levels__img" src={LevelsImg} alt="" />
-          <span className="levels__numbers">{numbers}</span>
-        </div>
-        <p className="levels__desc">{desc}</p>
-        <p className="levels__text">{text}</p>
-      </div>
-      <div className="levels__block">
-        <div className="levels__info">
-          <img className="levels__img" src={LevelsImg} alt="" />
-          <span className="levels__numbers">{numbers}</span>
-        </div>
-        <p className="levels__desc">{desc}</p>
-        <p className="levels__text">{text}</p>
-      </div>
-      <div className="levels__block">
-        <div className="levels__info">
-          <img className="levels__img" src={LevelsImg} alt="" />
-          <span className="levels__numbers">{numbers}</span>
-        </div>
-        <p className="levels__desc">{desc}</p>
-        <p className="levels__text">{text}</p>
-      </div>
+      <LevelItem numbers="46" desc="Level 1" text="partners" />
+      <LevelItem numbers="119" desc="Level 2" text="partners" />
+      <LevelItem numbers="285" desc="Level 3" text="partners" />
     </div>
   );
 };
