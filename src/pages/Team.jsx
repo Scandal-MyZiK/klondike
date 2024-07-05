@@ -1,7 +1,8 @@
 import React from "react";
+import Title from "../components/Title/Title";
 
 const Team = () => {
-  return <h2 className="title">TEAM</h2>;
+  return <Title text={"TEAM"} />;
 };
 
 export default Team;
