@@ -10,16 +10,18 @@ import "./style.css";
 
 const Team = () => {
   return (
-    <AppWidthWithContainer className="teame-bg">
-      <Title text="Teame"></Title>
-      <InformationBox
-        title="Приглашай друзей"
-        text="Чем больше друзей вы и ваши друзья пригласите в игру, тем выше будет
+    <AppWidthWithContainer className="team">
+      <div className="team__content">
+        <Title text="Team"></Title>
+        <InformationBox
+          title="Приглашай друзей"
+          text="Чем больше друзей вы и ваши друзья пригласите в игру, тем выше будет
           уровень вашего"
-      />
-      <Copylink text="copylink/ref/nickname" />
-      <Partners text="All partners:" number="450" />
-      <Levels numbers="46" desc="Level 1" text="partners" />
+        />
+        <Copylink text="copylink/ref/nickname" />
+        <Partners text="All partners:" number="450" />
+        <Levels />
+      </div>
     </AppWidthWithContainer>
   );
 };

@@ -1,5 +1,5 @@
 .app-width {
   width: 100dvw;
-  min-height: 100dvh;
+  min-height: calc(100dvh - 88px);
   padding-top: 10px;
 }

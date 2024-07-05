@@ -1,5 +1,6 @@
 .app-container {
   min-height: 100dvh;
+  padding-bottom: 88px;
   background-image: url("./assets/img/main.png");
   background-repeat: no-repeat;
   background-size: cover;
