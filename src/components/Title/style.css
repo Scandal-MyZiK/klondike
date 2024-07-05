@@ -1,18 +1,14 @@
 .title {
-  font-size: 48px;
+  font-size: 56px;
   text-align: center;
   color: #fdbf4c;
-  background: linear-gradient(
-    90deg,
-    rgba(254, 208, 131, 1),
-    rgba(255, 174, 39, 1)
-  );
+  background: linear-gradient(90deg, #fed083, #ffae27);
+  position: relative;
   -webkit-background-clip: text;
   background-clip: text;
-  text-shadow: 2px 2px 0 rgba(88, 43, 2, 1), -2px 2px 0 rgba(88, 43, 2, 1),
-    2px -2px 0 rgba(88, 43, 2, 1), -2px -2px 0 rgba(88, 43, 2, 1),
-    3px 3px 0 rgba(88, 43, 2, 1), -3px 3px 0 rgba(88, 43, 2, 1),
-    3px -3px 0 rgba(88, 43, 2, 1), -3px -3px 0 rgba(88, 43, 2, 1),
-    4px 4px 0 rgba(88, 43, 2, 1), -4px 4px 0 rgba(88, 43, 2, 1),
-    4px -4px 0 rgba(88, 43, 2, 1), -4px -4px 0 rgba(88, 43, 2, 1);
+  z-index: 1;
+  -webkit-text-stroke: 3px #582b02; /* Outline with 2px width and color */
+  text-stroke: 3px #582b02;
 }
+
+/* TODO: thinking about 8px */

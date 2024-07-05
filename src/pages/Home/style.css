@@ -1,6 +1,24 @@
-.home-bg {
+.home {
   background-image: url("./assets//home-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.home__content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 88px);
+}
+
+.home__total {
+  margin-top: 35px;
+}
+
+.home__shovel {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 0;
 }

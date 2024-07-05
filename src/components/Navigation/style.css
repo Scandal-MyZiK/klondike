@@ -1,8 +1,13 @@
 .bottom-nav {
   position: fixed;
-  bottom: 0;
+  padding: 9px 0;
   left: 0;
   right: 0;
+  bottom: 0;
+}
+
+.bottom-nav--dark {
+  background: #20130b;
 }
 
 .bottom-nav__container {

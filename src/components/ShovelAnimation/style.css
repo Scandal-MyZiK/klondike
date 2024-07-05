@@ -1,0 +1,38 @@
+.shovel {
+  padding: 30px 10px;
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.shovel__img {
+  display: block;
+  width: 90%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.coin {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background-image: url("./assets//img/coin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveUp 5s ease-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
