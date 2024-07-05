@@ -1,8 +1,8 @@
 import React from "react";
-import "./pages.css";
+import Title from "../components/Title/Title";
 
 const Home = () => {
-  return <h2 className="title">Home</h2>;
+  return <Title></Title>;
 };
 
 export default Home;

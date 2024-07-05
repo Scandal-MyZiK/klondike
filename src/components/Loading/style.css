@@ -1,7 +1,4 @@
 .loading-bg {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("./assets/main.png");
   display: flex;
   align-items: center;
   justify-content: center;

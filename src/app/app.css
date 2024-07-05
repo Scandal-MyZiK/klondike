@@ -1,5 +1,8 @@
 .app-container {
   min-height: 100dvh;
+  background-image: url("./assets/img/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
