@@ -3,6 +3,7 @@
 
 .history-tabs__btns {
   display: flex;
+  gap: 5px;
   justify-content: space-between;
 }
 
@@ -11,6 +12,8 @@
   margin-top: 20px;
 
   &.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }

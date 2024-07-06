@@ -20,5 +20,6 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+  min-height: 300px;
   height: 0;
 }
