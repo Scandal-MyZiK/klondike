@@ -1,5 +1,6 @@
 .title {
   font-size: 56px;
+  text-transform: uppercase;
   text-align: center;
   color: #fdbf4c;
   background: linear-gradient(90deg, #fed083, #ffae27);
@@ -7,8 +8,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   z-index: 1;
-  -webkit-text-stroke: 3px #582b02; /* Outline with 2px width and color */
+  -webkit-text-stroke: 3px #582b02;
   text-stroke: 3px #582b02;
 }
-
-/* TODO: thinking about 8px */

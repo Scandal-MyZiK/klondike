@@ -9,8 +9,7 @@
   border: 3px solid rgb(255, 255, 255);
   background: rgba(152, 152, 152, 1);
   border-radius: 13px;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1), inset 0 0 0 #000;
-  /* TODO: Разобраться как сделать внутреннюю тень снизу кнопки  */
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
 
   &.active {
     color: rgba(124, 141, 3, 1);
