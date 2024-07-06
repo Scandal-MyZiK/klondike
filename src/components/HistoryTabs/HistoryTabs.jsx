@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Button } from "../../components/Buttons/Button";
+import { Button } from "../Button/Button";
 import { HistoryItem } from "../../components/HistoryItem/HistoryItem";
 
 export const HistoryTabs = () => {
