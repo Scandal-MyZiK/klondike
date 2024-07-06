@@ -5,20 +5,22 @@ import HistoryItemImageArrow from "./assets/arrow-img.svg";
 
 export const HistoryItem = ({ text, price }) => {
   return (
-    <div className="historyItem">
-      <img
-        className="historyItem__img-telegram"
-        src={HistoryItemImageTelegram}
-        alt=""
-      />
-      <div className="historyItem__block">
-        <span className="historyItem__text">{text}</span>
-        <span className="historyItem__price">{price}</span>
-      </div>
-      <button className="historyItem__btn">
-        <span className="historyItem__desc">Start</span>
+    <div className="history-item">
+      <div className="history-item__container">
         <img
-          className="historyItem__img-arrow"
+          className="history-item__img-telegram"
+          src={HistoryItemImageTelegram}
+          alt=""
+        />
+        <div className="history-item__block">
+          <span className="history-item__text">{text}</span>
+          <span className="history-item__price">{price}</span>
+        </div>
+      </div>
+      <button className="history-item__btn">
+        <span className="history-item__desc">Start</span>
+        <img
+          className="history-item__img-arrow"
           src={HistoryItemImageArrow}
           alt=""
         />
