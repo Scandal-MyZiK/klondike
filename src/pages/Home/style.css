@@ -8,7 +8,7 @@
 .home__content {
   display: flex;
   flex-direction: column;
-  min-height: calc(100dvh - 88px);
+  min-height: calc(100dvh - 120px);
 }
 
 .home__total {
