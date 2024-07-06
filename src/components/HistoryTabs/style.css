@@ -1,4 +1,6 @@
 .history-tabs {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .history-tabs__btns {
