@@ -1,20 +1,19 @@
 import React from "react";
 import AppWidthWithContainer from "../../components/AppWidthContainer/AppWidthWithContainer";
 import Title from "../../components/Title/Title";
-import { Button } from "../../components/Buttons/Button";
-import { HistoryItem } from "../../components/HistoryItem/HistoryItem";
 
 import "./style.css";
+import { HistoryTabs } from "../../components/HistoryTabs/HistoryTabs";
 
 const Tasks = () => {
   return (
     <AppWidthWithContainer>
-      <Title text="TASKS" />
-      <Button text="Active" />
-      <HistoryItem
-        text="Subscribe to our CEO channel (RU)"
-        price="+ $ 100,000"
-      />
+      <div className="tasks">
+        <Title text="TASKS" />
+        <div className="tasks__content">
+          <HistoryTabs />
+        </div>
+      </div>
     </AppWidthWithContainer>
   );
 };

@@ -7,7 +7,9 @@ export const ShovelAnimation = () => {
   const [coins, setCoins] = useState([]);
 
   const handleClick = (e) => {
-    const x = e.clientX;
+    // 42 - coin width
+    const x =
+      e.clientX + 42 > window.innerWidth ? window.innerWidth - 42 : e.clientX;
     const y = e.clientY;
     setCoins((prevCoins) => [...prevCoins, { id: Date.now(), x, y }]);
   };

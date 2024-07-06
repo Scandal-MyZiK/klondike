@@ -3,22 +3,22 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding: 13px 0;
-  color: rgba(124, 141, 3, 1);
-  background: linear-gradient(
-    181deg,
-    rgba(254, 208, 131, 1),
-    rgba(255, 174, 39, 1)
-  );
+  color: #fff;
   max-width: 170px;
   width: 100%;
-  border: 3px solid rgba(124, 141, 3, 1);
-  border-radius: 13px;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1), inset 0 0 0 #000;
-  /* Разобраться как сделать внутреннюю тень снизу кнопки  */
-}
-
-.button.active {
-  color: #fff;
   border: 3px solid rgb(255, 255, 255);
   background: rgba(152, 152, 152, 1);
+  border-radius: 13px;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1), inset 0 0 0 #000;
+  /* TODO: Разобраться как сделать внутреннюю тень снизу кнопки  */
+
+  &.active {
+    color: rgba(124, 141, 3, 1);
+    border: 3px solid rgba(124, 141, 3, 1);
+    background: linear-gradient(
+      181deg,
+      rgba(254, 208, 131, 1),
+      rgba(255, 174, 39, 1)
+    );
+  }
 }

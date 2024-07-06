@@ -1,0 +1,16 @@
+.history-tabs {
+}
+
+.history-tabs__btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-tabs__content {
+  display: none;
+  margin-top: 20px;
+
+  &.active {
+    display: block;
+  }
+}
