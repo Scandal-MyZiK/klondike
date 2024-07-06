@@ -7,7 +7,7 @@ import "./assets/fonts/fonts.css";
 import "./app.css";
 
 const Home = lazy(() => import("../pages/Home/Home"));
-const Team = lazy(() => import("../pages/Tasks"));
+const Team = lazy(() => import("../pages/Tasks/Tasks"));
 const Tasks = lazy(() => import("../pages/Team/Team"));
 const RoadMap = lazy(() => import("../pages/Roadmap/RoadMap"));
 
