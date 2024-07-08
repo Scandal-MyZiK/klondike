@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 import "./style.css";
 
-function ShortCell({ to = "#", image, text }) {
+function ShortCell({ image, text }) {
   return (
-    <NavLink to={to} className="cell">
+    <div className="cell">
       {!!image ? <img src={image} alt="" /> : null}
       <span className="cell__text">{text}</span>
-    </NavLink>
+    </div>
   );
 }
 
