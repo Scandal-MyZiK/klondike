@@ -12,23 +12,14 @@ import "./app.css";
 
 const App = () => {
   const [showLoading, setShowLoading] = useState(true);
-  const [updateViewportCount, setUpdateViewportCount] = useState(0);
 
   useEffect(() => {
-    const handleViewportChange = () => {
-      console.log(updateViewportCount);
-      setUpdateViewportCount(updateViewportCount + 1);
-    };
-
     const timer = setTimeout(() => {
       setShowLoading(false);
     }, 2000);
 
-    window.addEventListener("viewport_changed", handleViewportChange);
-
     return () => {
       clearTimeout(timer);
-      window.removeEventListener("viewport_changed", handleViewportChange);
     };
   }, []);
 
