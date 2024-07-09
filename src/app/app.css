@@ -1,17 +1,11 @@
 .app-container {
+  min-height: var(--tg-viewport-height, 100dvh);
   height: var(--tg-viewport-height, 100dvh);
   background-image: url("./assets/img/main.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-}
-
-@supports (-webkit-touch-callout: none) {
-  /* Это применяется только на iOS */
-  .app-container {
-    height: 100vh; /* Используем 100vh как запасной вариант */
-  }
 }
 
 * {
