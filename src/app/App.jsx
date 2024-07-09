@@ -16,6 +16,7 @@ const App = () => {
 
   useEffect(() => {
     const handleViewportChange = () => {
+      console.log(updateViewportCount);
       setUpdateViewportCount(updateViewportCount + 1);
     };
 
