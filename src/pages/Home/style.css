@@ -8,7 +8,7 @@
 .home__content {
   display: flex;
   flex-direction: column;
-  min-height: calc(100dvh - 120px);
+  height: 100%;
 }
 
 .home__total {
@@ -22,4 +22,13 @@
   align-items: stretch;
   min-height: 300px;
   height: 0;
+  outline: none;
+}
+
+.home__shovel:focus {
+  outline: none;
+}
+
+.home__shovel:focus-visible {
+  outline: none;
 }
