@@ -24,11 +24,11 @@ const App = () => {
       setShowLoading(false);
     }, 2000);
 
-    window.on("viewport_changed", handleViewportChange);
+    window.addEventListener("viewport_changed", handleViewportChange);
 
     return () => {
       clearTimeout(timer);
-      window.off("viewport_changed", handleViewportChange);
+      window.removeEventListener("viewport_changed", handleViewportChange);
     };
   }, []);
 
