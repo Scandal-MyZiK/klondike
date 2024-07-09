@@ -7,6 +7,13 @@
   flex-direction: column;
 }
 
+@supports (-webkit-touch-callout: none) {
+  /* Это применяется только на iOS */
+  .app-container {
+    height: 100vh; /* Используем 100vh как запасной вариант */
+  }
+}
+
 * {
   box-sizing: border-box;
 }
