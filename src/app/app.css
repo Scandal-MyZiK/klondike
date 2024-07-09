@@ -1,9 +1,10 @@
 .app-container {
   height: 100dvh;
-  padding-bottom: 88px;
   background-image: url("./assets/img/main.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
