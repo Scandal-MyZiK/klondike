@@ -3,6 +3,8 @@ import AppWidthWithContainer from "../../components/AppWidthContainer/AppWidthWi
 import "./style.css";
 import { HeaderCells } from "../../components/HeaderCells/HeaderCells";
 import { TotalCount } from "../../components/TotalCount/TotalCount";
+import { LeagueLink } from "../../components/LeagueLink/LeagueLink";
+import Shovel from "./assets/shovel.svg";
 import { ShovelAnimation } from "../../components/ShovelAnimation/ShovelAnimation";
 
 const Home = () => {
@@ -12,6 +14,9 @@ const Home = () => {
         <HeaderCells />
         <div className="home__total">
           <TotalCount />
+        </div>
+        <div className="home__league-link">
+          <LeagueLink text="Wood" img={Shovel} link={"#"} />
         </div>
         <div className="home__shovel">
           <ShovelAnimation />
