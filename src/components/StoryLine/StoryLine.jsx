@@ -6,6 +6,7 @@ import Cup from "./assets/cup.svg";
 import Skull from "./assets/skull.svg";
 import Box from "./assets/box.svg";
 import Gold from "./assets/gold.svg";
+import Ready from "./assets/ready.svg";
 
 export const StoryLine = () => {
   const data = [
@@ -13,6 +14,7 @@ export const StoryLine = () => {
       img: Diamond,
       title: "dec 2023",
       text: "Built a fully working MVP and integrated first 10 P2P lending platforms.",
+      finished: true,
     },
     {
       img: Cup,
@@ -28,13 +30,11 @@ export const StoryLine = () => {
       img: Gold,
       title: "jul 2024",
       text: "Built a fully working MVP and integrated firs",
-      color: "brown",
     },
     {
       img: Box,
       title: "sep 2024",
       text: "Built a fully working MVP and integrated firs",
-      color: "brown",
     },
   ];
 
@@ -42,15 +42,17 @@ export const StoryLine = () => {
     <ul className="storyline">
       {data.map((item, index) => {
         return (
-          <li
-            className={`storyline__item ${
-              item.color ? "storyline__item--" + item.color : ""
-            }`}
-            key={index}
-          >
-            <img src={item.img} alt="" className="storyline__img" />
+          <li className={`storyline__item`} key={index}>
+            <div className="storyline__img-block">
+              <img src={item.img} alt="" className="storyline__img" />
+            </div>
             <div className="storyline__content">
-              <span className="storyline__title">{item.title}</span>
+              <span className="storyline__title">
+                {item.title}{" "}
+                {item.finished && (
+                  <img className="storyline__ready-icon" src={Ready} alt="" />
+                )}
+              </span>
               <p className="storyline__text">{item.text}</p>
             </div>
           </li>
