@@ -1,0 +1,20 @@
+.league-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 178px;
+}
+
+.league-link__img-shovel {
+  max-width: 46px;
+}
+
+.league-link__text {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.league-link__img-arrow {
+  max-width: 12px;
+}
