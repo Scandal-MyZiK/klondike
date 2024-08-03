@@ -4,3 +4,10 @@
   align-items: center;
   gap: 5px;
 }
+
+.header-cells__popup-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
