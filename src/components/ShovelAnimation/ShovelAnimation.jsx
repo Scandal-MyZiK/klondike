@@ -6,20 +6,23 @@ import "./style.css";
 export const ShovelAnimation = () => {
   const [coins, setCoins] = useState([]);
 
-  const handleClick = (e) => {
-    // 42 - coin width
-    const x =
-      e.clientX + 42 > window.innerWidth ? window.innerWidth - 42 : e.clientX;
-    const y = e.clientY;
-    setCoins((prevCoins) => [...prevCoins, { id: Date.now(), x, y }]);
+  const handleTouch = (e) => {
+    const newCoins = Array.from(e.touches).map((touch) => {
+      // 42 - coin width
+      const x =
+        touch.clientX + 42 > window.innerWidth
+          ? window.innerWidth - 42
+          : touch.clientX;
+      const y = touch.clientY;
+      return { id: Date.now() + touch.identifier, x, y };
+    });
+    setCoins((prevCoins) => [...prevCoins, ...newCoins]);
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCoins((prevCoins) =>
-        prevCoins.filter((coin) => {
-          return Date.now() - coin.id < 5000; // 2 секундная анимация
-        })
+      setCoins(
+        (prevCoins) => prevCoins.filter((coin) => Date.now() - coin.id < 5000) // 5-second animation
       );
     }, 500);
 
@@ -27,7 +30,7 @@ export const ShovelAnimation = () => {
   }, []);
 
   return (
-    <div className="shovel" onClick={handleClick}>
+    <div className="shovel" onTouchStart={handleTouch}>
       {coins.map((coin) => (
         <div
           key={coin.id}
