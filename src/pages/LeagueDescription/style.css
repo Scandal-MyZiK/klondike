@@ -1,0 +1,12 @@
+.league-description {
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.league-description__content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
