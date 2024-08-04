@@ -13,12 +13,12 @@
     border-radius: 12px;
     display: block;
     position: absolute;
-    left: -5px;
+    left: -4px;
     top: -5px;
-    right: -5px;
+    right: -4px;
     bottom: -5px;
     border: 5px solid transparent;
-    background: linear-gradient(to bottom, #fed083 0%, #ffae27 100%) border-box;
+    background: #fed083;
     -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
       linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor; /*5'*/
@@ -42,7 +42,7 @@
 
 .progress-bar__left {
   display: block;
-  background: linear-gradient(to bottom, #fed083 0%, #ffae27 100%);
+  background: #ffae27;
   height: 29px;
   min-width: 10px;
 }
