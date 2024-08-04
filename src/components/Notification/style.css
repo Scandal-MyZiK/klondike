@@ -1,8 +1,11 @@
 .notification {
   position: fixed;
   top: 6px;
-  right: 6px;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: calc(100% - 12px);
+  max-width: 600px;
   background-color: rgba(255, 255, 255, 0.85);
   padding: 16px 34px;
   color: #582b02;
