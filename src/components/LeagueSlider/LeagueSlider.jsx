@@ -16,21 +16,29 @@ export const LeagueSlider = () => {
       title: "Wood League",
       text: "Your number of shares determines the league you enter.",
       img: Shovel1,
+      start: 20,
+      end: 5000,
     },
     {
       title: "Bronze League",
       text: "Your number of shares determines the league you enter.",
       img: Shovel2,
+      start: 300,
+      end: 5000,
     },
     {
       title: "Silver League",
       text: "Your number of shares determines the league you enter.",
       img: Shovel3,
+      start: 1000,
+      end: 5000,
     },
     {
       title: "Gold League",
       text: "Your number of shares determines the league you enter.",
       img: Shovel4,
+      start: 2000,
+      end: 5000,
     },
   ];
 
@@ -42,14 +50,14 @@ export const LeagueSlider = () => {
       slidesPerView={1}
       loop={true}
     >
-      {data.map((slide) => {
+      {data.map((slide, idx) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide key={idx}>
             <span>{slide.title}</span>
             <span>{slide.text}</span>
             <img src={slide.img} alt="" />
 
-            <ProgressBar />
+            <ProgressBar start={slide.start} end={slide.end} />
           </SwiperSlide>
         );
       })}
