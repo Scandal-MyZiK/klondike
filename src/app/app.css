@@ -8,6 +8,10 @@
   flex-direction: column;
 }
 
+.app-container--league {
+  background-image: url("../pages/LeagueDescription/assets/images/bg.png");
+}
+
 * {
   box-sizing: border-box;
 }
