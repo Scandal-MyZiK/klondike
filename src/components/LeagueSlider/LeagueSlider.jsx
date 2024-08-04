@@ -45,9 +45,9 @@ export const LeagueSlider = () => {
       {data.map((slide) => {
         return (
           <SwiperSlide>
-            <span>{slide.title}</span>
-            <span>{slide.text}</span>
-            <img src={slide.img} alt="" />
+            <span className="league-slider__title">{slide.title}</span>
+            <p className="league-slider__text">{slide.text}</p>
+            <img className="league-slider__img" src={slide.img} alt="" />
 
             <ProgressBar />
           </SwiperSlide>

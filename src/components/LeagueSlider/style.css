@@ -16,3 +16,23 @@
 .swiper-button-next {
   background-image: url("./assets/images/right.svg");
 }
+
+.league-slider__title {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+
+.league-slider__text {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  width: 210px;
+  text-align: center;
+  margin: 12px auto 28px;
+}
+
+.league-slider__img {
+  display: block;
+  margin: auto;
+}
