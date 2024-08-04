@@ -16,7 +16,7 @@ const Home = () => {
           <TotalCount />
         </div>
         <div className="home__league-link">
-          <LeagueLink text="Wood" img={Shovel} link={"#"} />
+          <LeagueLink text="Wood" img={Shovel} link={"/league-description"} />
         </div>
         <div className="home__shovel">
           <ShovelAnimation />

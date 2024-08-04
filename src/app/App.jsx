@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home";
 import Team from "../pages/Team/Team";
 import Tasks from "../pages/Tasks/Tasks";
 import RoadMap from "../pages/Roadmap/RoadMap";
+import LeagueDescription from "../pages/LeagueDescription/LeagueDescription";
 import "./assets/fonts/fonts.css";
 import "./app.css";
 
@@ -57,6 +58,7 @@ const App = () => {
           <Route path="/team" element={<Tasks />} />
           <Route path="/tasks" element={<Team />} />
           <Route path="/roadmap" element={<RoadMap />} />
+          <Route path="/league-description" element={<LeagueDescription />} />
         </Routes>
         <Navigation />
       </div>

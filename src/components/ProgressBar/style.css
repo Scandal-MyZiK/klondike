@@ -1,0 +1,10 @@
+.progress-bar {
+  width: 80%;
+  border: 5px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #fed083 0%, #ffae27 100%) border-box;
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude;
+}

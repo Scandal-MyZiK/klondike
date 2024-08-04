@@ -1,0 +1,58 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "./style.css";
+import Shovel1 from "./assets/images/shovel.svg";
+import Shovel2 from "./assets/images/shovel2.svg";
+import Shovel3 from "./assets/images/shovel3.svg";
+import Shovel4 from "./assets/images/shovel4.svg";
+import { ProgressBar } from "../ProgressBar/ProgressBar";
+
+export const LeagueSlider = () => {
+  const data = [
+    {
+      title: "Wood League",
+      text: "Your number of shares determines the league you enter.",
+      img: Shovel1,
+    },
+    {
+      title: "Bronze League",
+      text: "Your number of shares determines the league you enter.",
+      img: Shovel2,
+    },
+    {
+      title: "Silver League",
+      text: "Your number of shares determines the league you enter.",
+      img: Shovel3,
+    },
+    {
+      title: "Gold League",
+      text: "Your number of shares determines the league you enter.",
+      img: Shovel4,
+    },
+  ];
+
+  return (
+    <Swiper
+      modules={[Navigation]}
+      navigation
+      spaceBetween={50}
+      slidesPerView={1}
+      loop={true}
+    >
+      {data.map((slide) => {
+        return (
+          <SwiperSlide>
+            <span>{slide.title}</span>
+            <span>{slide.text}</span>
+            <img src={slide.img} alt="" />
+
+            <ProgressBar />
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  );
+};
