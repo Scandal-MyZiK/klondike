@@ -5,14 +5,13 @@
   left: 0;
   width: 100%;
   height: calc(100% - 32px);
-  background: white;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
   transition: bottom 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./assets/popup-img__bg.png);
-  background-size: cover;
+  background-image: url("./assets/popup-img__bg.png");
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -31,12 +30,10 @@
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 40px;
+  right: 20px;
   background: none;
   border: none;
-  font-size: 16px;
-  cursor: pointer;
 }
 
 .popup__img {
