@@ -9,7 +9,7 @@
 }
 
 .app-container--league {
-  background-image: url("../pages/LeagueDescription/assets/images/bg.png");
+  background-image: url("./assets/img/league-bg.png");
 }
 
 * {
