@@ -14,6 +14,7 @@
   transition: opacity 0.3s ease;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  z-index: 99;
 
   b {
     margin: 0 5px;

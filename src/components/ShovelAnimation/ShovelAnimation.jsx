@@ -7,6 +7,8 @@ export const ShovelAnimation = () => {
   const [coins, setCoins] = useState([]);
 
   const handleTouch = (e) => {
+    e.preventDefault();
+
     const newCoins = Array.from(e.touches).map((touch) => {
       // 42 - coin width
       const x =

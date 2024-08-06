@@ -2,12 +2,12 @@
   padding: 10px;
   height: 100%;
   width: 100%;
-  flex: 1;
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   outline: none;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .shovel:focus {
@@ -30,7 +30,7 @@
   position: absolute;
   width: 42px;
   height: 42px;
-  background-image: url("./assets//img/coin.png");
+  background-image: url("./assets/img/coin.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: moveUp 5s ease-out forwards;
