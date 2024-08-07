@@ -13,10 +13,12 @@
 
 .home__total {
   margin-top: 20px;
+  user-select: none;
 }
 
 .home__league-link {
   margin: 10px auto 0;
+  user-select: none;
 }
 
 .home__shovel {
@@ -26,6 +28,7 @@
   align-items: stretch;
   height: 0;
   outline: none;
+  user-select: none;
 }
 
 .home__shovel:focus {
